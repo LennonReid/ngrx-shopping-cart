@@ -1,0 +1,262 @@
+[
+  {
+    "productId": "116150699388613999",
+    "productName": "CHAIR",
+    "comments": 38,
+    "rating": 35,
+    "description": "",
+    "specMatrix": {
+      "specList": [
+        {
+          "name": "specifications",
+          "key": "size",
+          "attributeList": [
+            {
+              "name": "XL",
+              "key": "XL"
+            },
+            {
+              "name": "L",
+              "key": "L"
+            }
+          ]
+        },
+        {
+          "name": "decorations",
+          "key": "color",
+          "attributeList": [
+            {
+              "name": "black",
+              "key": "black"
+            },
+            {
+              "name": "white",
+              "key": "white"
+            }
+          ]
+        }
+      ],
+      "availableCombinations": [
+        {
+          "size": "XL",
+          "color": "white"
+        },
+        {
+          "size": "L",
+          "color": "white"
+        },
+        {
+          "size": "L",
+          "color": "black"
+        }
+      ]
+    },
+    "productImages": [
+      "assets/images/product-chair.png"
+    ],
+    "available": true,
+    "sku": [
+      {
+        "skuId": "167180699993902522",
+        "productId": "116150699388613999",
+        "available": true,
+        "spec": {
+          "size": "L",
+          "color": "white"
+        },
+        "price": 74500,
+        "rrp": 105300,
+        "currency": "USD",
+        "stock": 74,
+        "discount": 25,
+        "productImages": [
+          "assets/images/product-chair.png"
+        ]
+      },
+      {
+        "skuId": "167180699993902523",
+        "productId": "116150699388613999",
+        "available": true,
+        "spec": {
+          "size": "XL",
+          "color": "white"
+        },
+        "price": 74500,
+        "rrp": 105300,
+        "currency": "USD",
+        "stock": 74,
+        "discount": 25,
+        "productImages": [
+          "assets/images/product-chair.png"
+        ]
+      },
+      {
+        "skuId": "167180699993902524",
+        "productId": "116150699388613999",
+        "available": true,
+        "spec": {
+          "size": "L",
+          "color": "black"
+        },
+        "price": 74500,
+        "rrp": 105300,
+        "currency": "USD",
+        "stock": 74,
+        "discount": 25,
+        "productImages": [
+          "assets/images/product-chair.png"
+        ]
+      }
+    ]
+  },
+  {
+    "productId": "116150699388614000",
+    "productName": "SOFA",
+    "comments": 38,
+    "rating": 35,
+    "description": "",
+    "specMatrix": {
+      "specList": [
+        {
+          "name": "specifications",
+          "key": "size",
+          "attributeList": [
+            {
+              "name": "F",
+              "key": "F"
+            }
+          ]
+        }
+      ],
+      "availableCombinations": [
+        {
+          "size": "F",
+          "color": ""
+        }
+      ]
+    },
+    "productImages": [
+      "assets/images/product-sofa.png"
+    ],
+    "available": true,
+    "sku": [
+      {
+        "skuId": "167180699993903522",
+        "productId": "116150699388614000",
+        "available": true,
+        "spec": {
+          "size": "L",
+          "color": "white"
+        },
+        "price": 74500,
+        "rrp": 105300,
+        "currency": "USD",
+        "stock": 74,
+        "discount": 25,
+        "productImages": [
+          "assets/images/product-sofa.png"
+        ]
+      }
+    ]
+  },
+  {
+    "productId": "116150699388614001",
+    "productName": "GUYER KITCHEN",
+    "comments": 38,
+    "rating": 35,
+    "description": "",
+    "specMatrix": {
+      "specList": [
+        {
+          "name": "specifications",
+          "key": "size",
+          "attributeList": [
+            {
+              "name": "F",
+              "key": "F"
+            }
+          ]
+        }
+      ],
+      "availableCombinations": [
+        {
+          "size": "F",
+          "color": ""
+        }
+      ]
+    },
+    "productImages": [
+      "assets/images/product-kitchen.png"
+    ],
+    "available": true,
+    "sku": [
+      {
+        "skuId": "167180699993904522",
+        "productId": "116150699388614001",
+        "available": true,
+        "spec": {
+          "size": "L",
+          "color": "white"
+        },
+        "price": 74500,
+        "rrp": 105300,
+        "currency": "USD",
+        "stock": 74,
+        "discount": 25,
+        "productImages": [
+          "assets/images/product-kitchen.png"
+        ]
+      }
+    ]
+  },
+  {
+    "productId": "116150699388614001",
+    "productName": "GUYER ROOM",
+    "comments": 38,
+    "rating": 35,
+    "description": "",
+    "specMatrix": {
+      "specList": [
+        {
+          "name": "specifications",
+          "key": "size",
+          "attributeList": [
+            {
+              "name": "F",
+              "key": "F"
+            }
+          ]
+        }
+      ],
+      "availableCombinations": [
+        {
+          "size": "F",
+          "color": ""
+        }
+      ]
+    },
+    "productImages": [
+      "assets/images/product-kitchen.png"
+    ],
+    "available": true,
+    "sku": [
+      {
+        "skuId": "167180699993905522",
+        "productId": "116150699388614002",
+        "available": true,
+        "spec": {
+          "size": "L",
+          "color": "white"
+        },
+        "price": 74500,
+        "rrp": 105300,
+        "currency": "USD",
+        "stock": 74,
+        "discount": 25,
+        "productImages": [
+          "assets/images/product-kitchen.png"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,61 @@
+<ng-container *ngIf="(productLists$ | async) as productLists;else loading">
+  <section
+    class="mx-auto grid max-w-[1200px] grid-cols-2 gap-3 px-5 m-10 pb-10 lg:grid-cols-4"
+  >
+
+    <ng-container *ngFor="let productList of productLists; trackBy: trackByProductLists">
+      <div class="flex flex-col">
+        <div class="relative h-96 w-full flex items-center justify-center cursor-pointer">
+          <img
+            class="h-full w-auto object-contain"
+            (error)="onImgLoadError($event)"
+            [src]="productList.image | firstImage"
+            alt="sofa image"
+          />
+
+        </div>
+
+        <div>
+          <p class="mt-2 h-12 line-clamp-2" [title]="productList.title">{{productList.title}}</p>
+          <p class="font-medium text-violet-900">
+            ${{productList.price}}
+            <span class="text-sm text-gray-500 line-through">${{(productList.price + randomNum)}}</span>
+          </p>
+          <div class="flex items-center">
+            <ng-container *ngFor="let rating of ratingArrays;let index = index;">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="h-4 w-4 text-gray-200"
+                [class.text-yellow-400]="(productList.rating.rate)>index"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </ng-container>
+            <p class="text-sm text-gray-400">({{productList.rating.count }})</p>
+          </div>
+
+          <div>
+            <button (click)="addToCart()"
+                    class="relative rounded my-5 h-10 w-full overflow-hidden group bg-violet-500 relative hover:bg-gradient-to-r hover:from-violet-500 hover:to-violet-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-violet-400 transition-all ease-out duration-300">
+            <span
+              class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
+              <span class="relative">Add to cart</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </section>
+</ng-container>
+<ng-template #loading>
+  <div class="flex justify-center items-center w-full h-screen">
+    <img src="assets/svgs/loading.svg" atl="loading">
+  </div>
+</ng-template>
+<!-- /Recommendations -->
